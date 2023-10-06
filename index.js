@@ -62,10 +62,7 @@ if (!document.querySelector("html").classList.contains("w-editor")) {
   connectToScrollTrigger();
 }
 //SMOOTH SCROLL END
-</script>
 
-
-<script>
 //swiper script START
 const swiper = new Swiper(".swiper", {
   // Optional parameters
@@ -94,10 +91,7 @@ const swiper = new Swiper(".swiper", {
   }
 });
 //swiper script END
-</script>
 
-
-<script>
 //Local time script START
 document.addEventListener("DOMContentLoaded", function () {
   const timeSpan = document.querySelector("#timeSpan");
@@ -120,10 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 //Local time script For contact page
-</script>
 
-
-<script>
 //Local time script START
 document.addEventListener("DOMContentLoaded", function () {
   const timeSpansecond = document.querySelector("#timeSpansecond");
@@ -147,10 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 //Local time script END
-</script>
 
-
-<script>
 //Gsap infinite marquee
 
 gsap.registerPlugin(ScrollTrigger);
