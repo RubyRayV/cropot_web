@@ -92,52 +92,6 @@ const swiper = new Swiper(".swiper", {
 });
 //Swiper script END
 
-//Local time script START
-document.addEventListener("DOMContentLoaded", function () {
-  const timeSpan = document.querySelector("#timeSpan");
-
-  const optionsTime = {
-    timeZone: "Europe/Kyiv",
-    hour12: true,
-    hour: "numeric",
-    minute: "numeric"
-  };
-
-  const formatter = new Intl.DateTimeFormat([], optionsTime);
-  updateTime();
-  setInterval(updateTime, 1000);
-
-  function updateTime() {
-    const dateTime = new Date();
-    const formattedDateTime = formatter.format(dateTime);
-    timeSpan.textContent = formattedDateTime;
-  }
-});
-//Local time script For contact page
-
-//Local time(seconds) script  START
-document.addEventListener("DOMContentLoaded", function () {
-  const timeSpansecond = document.querySelector("#timeSpansecond");
-
-  const optionsTime = {
-    timeZone: "Europe/Kyiv",
-    hour12: true,
-    hour: "numeric",
-    minute: "numeric",
-    second: "numeric"
-  };
-
-  const formatter = new Intl.DateTimeFormat([], optionsTime);
-  updateTime();
-  setInterval(updateTime, 1000);
-
-  function updateTime() {
-    const dateTime = new Date();
-    const formattedDateTime = formatter.format(dateTime);
-    timeSpansecond.textContent = formattedDateTime;
-  }
-});
-//Local time(seconds) script END
 
 //Gsap infinite marquee
 
